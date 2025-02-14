@@ -6,7 +6,7 @@ int main() {
     string input;
 
     cout << "line: ";
-    getline(std::cin, input);
+    getline(cin, input);
 
     StringHandler sh(input);
 
