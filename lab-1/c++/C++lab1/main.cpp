@@ -5,20 +5,20 @@ using namespace std;
 int main() {
     string input;
 
-    cout << "Введіть рядок: ";
+    cout << "line: ";
     getline(std::cin, input);
 
     StringHandler sh(input);
 
-    cout << "Довжина рядка: " << sh.getLength() << endl;
+    cout << "lenght line: " << sh.getLength() << endl;
 
     char charToRemove;
-    cout << "Введіть символ для видалення: ";
+    cout << "enter symbol to delete: ";
     cin >> charToRemove;
     sh.removeCharacter(charToRemove);
 
-    cout << "Рядок після видалення: " << sh.getString() << endl;
-    cout << "Перевернутий рядок: " << sh.reverseString() << endl;
+    cout << "line after delete symbol: " << sh.getString() << endl;
+    cout << "reverse line: " << sh.reverseString() << endl;
 
     return 0;
 }
